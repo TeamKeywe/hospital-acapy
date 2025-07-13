@@ -1,0 +1,27 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1"
+  ],
+  "type": ["VerifiableCredential", "HospitalPassCredential"],
+  "issuer": "did:peer:4.Ez6LSfQ7E9vFq9zbr7Yx6HTSoJpU1u3oQZSCvPNKcdtZg1xtq.LzLrWvM2aXbdZDVjY2YwYy05NmIwLTRlMzYtYWMzMi1hMGY1NWU0YjYwMGIiLCJpYXQiOjE3NDcz1HUh9sH",
+  "issuanceDate": "2025-05-16T10:00:00Z",
+  "credentialSubject": {
+    "id": "did:peer:4.Sz9faW9jM9k8KvVnWuyxKz5kS8hE3bzr...",
+    "name": "정선우",
+    "contact": "010-1234-5678",
+    "hospital": "강북삼성병원",
+    "hospitalCode": "TSEO01KS",
+    "pass_type": "GUARDIAN",
+    "valid_from": "2025-05-16",
+    "valid_until": "2025-05-18"
+  },
+  "proof": {
+    "type": "Ed25519Signature2018",
+    "created": "2025-05-16T10:00:00Z",
+    "proofPurpose": "assertionMethod",
+    "verificationMethod": "did:peer:4.Ez6LS...#key-1",
+    "jws": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3YWxsZXRfaWQiOiJmNDVjY2YwYy05NmIwLTRlMzYtYWMzMi1hMGY1NWU0YjYwMGIiLCJpYXQiOjE3NDczNjUyNTl9.WFmogfFhnhzk9nmNnsWHBpZurSsMxfuPH_CL1RxIyqQ"
+  }
+}
+
+
