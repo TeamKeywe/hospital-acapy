@@ -1,0 +1,48 @@
+endpoint:
+  - "http://hos.keywe.site/"
+  - "ws://172.30.1.12:8005"
+
+inbound-transport:
+  - ["http", "0.0.0.0", "8020"]
+  - ["ws", "0.0.0.0", "8005"]
+
+outbound-transport:
+  - "ws"
+  - "http"
+
+admin: ["0.0.0.0", "8002"]
+admin-insecure-mode: true
+
+webhook-url: http://did-agent:60005/webhooks
+
+# Wallet Configuration
+wallet-type: "askar"
+wallet-name: "base_wallet"
+wallet-key: "basekey"
+wallet-storage-type: "sqlite"
+wallet-storage-config: '{"path":"/tmp/base_wallet.db"}'
+
+# Multitenant Configuration
+multitenant: true
+multitenant-admin: true
+jwt-secret: "mysupersecret"
+auto-provision: true
+
+# Agent Configuration
+label: "multitenant-aca"
+no-ledger: true
+
+# Auto-accept Settings
+auto-accept-invites: true
+auto-accept-requests: true
+auto-respond-messages: true
+auto-respond-credential-offer: true
+auto-respond-credential-request: true
+auto-respond-presentation-request: true
+
+# Additional Features
+enable-undelivered-queue: true
+emit-new-didcomm-prefix: true
+emit-new-didcomm-mime-type: true
+open-mediation: true
+log-level: "info"
